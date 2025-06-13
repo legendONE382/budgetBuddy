@@ -1,0 +1,14 @@
+body.light-mode {
+  background: #f8f9fa;
+  color: #212529;
+}
+body.dark-mode {
+  background: #212529;
+  color: #f8f9fa;
+}
+.navbar.light-mode { background: #f8f9fa!important; }
+.navbar.dark-mode { background: #343a40!important; }
+.card { transition: transform 0.2s; }
+.card:hover { transform: scale(1.02); }
+.list-group-item.income { border-left: 5px solid #198754; }
+.list-group-item.expense { border-left: 5px solid #dc3545; }
