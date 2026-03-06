@@ -1,14 +1,89 @@
 body.light-mode {
-  background: #f8f9fa;
-  color: #212529;
+  background: #f6f8fb;
+  color: #1e2430;
 }
+
 body.dark-mode {
-  background: #212529;
-  color: #f8f9fa;
+  background: #12161f;
+  color: #eff3ff;
 }
-.navbar.light-mode { background: #f8f9fa!important; }
-.navbar.dark-mode { background: #343a40!important; }
-.card { transition: transform 0.2s; }
-.card:hover { transform: scale(1.02); }
-.list-group-item.income { border-left: 5px solid #198754; }
-.list-group-item.expense { border-left: 5px solid #dc3545; }
+
+body.dark-mode .card,
+body.dark-mode .navbar,
+body.dark-mode .list-group-item,
+body.dark-mode .hero,
+body.dark-mode footer {
+  background-color: #1b2230 !important;
+  color: #eff3ff !important;
+  border-color: #2e394d !important;
+}
+
+body.dark-mode .text-muted {
+  color: #b9c3d7 !important;
+}
+
+.hero {
+  background: linear-gradient(135deg, rgba(44, 91, 255, 0.08), rgba(0, 185, 122, 0.08));
+  border: 1px solid rgba(44, 91, 255, 0.2);
+}
+
+.metric-card {
+  border-width: 1px;
+}
+
+.metric-value {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.list-group-item.income {
+  border-left: 4px solid #198754;
+}
+
+.list-group-item.expense {
+  border-left: 4px solid #dc3545;
+}
+
+.chat-window {
+  min-height: 220px;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #d8deea;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  background: #fbfcff;
+}
+
+.chat-message {
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.65rem;
+  margin-bottom: 0.6rem;
+  max-width: 90%;
+  line-height: 1.35;
+}
+
+.chat-message.user {
+  margin-left: auto;
+  background: #0d6efd;
+  color: #fff;
+}
+
+.chat-message.assistant {
+  background: #ecf2ff;
+  color: #1e2430;
+}
+
+.insight-list {
+  padding-left: 1rem;
+}
+
+body.dark-mode .chat-window {
+  background: #111827;
+  border-color: #2e394d;
+}
+
+body.dark-mode .chat-message.assistant {
+  background: #2b364a;
+  color: #ecf0ff;
+}
